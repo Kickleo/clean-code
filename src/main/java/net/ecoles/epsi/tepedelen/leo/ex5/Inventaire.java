@@ -1,4 +1,4 @@
-package ex5;
+package net.ecoles.epsi.tepedelen.leo.ex5;
 
 import java.util.ArrayList;
 import java.util.List;

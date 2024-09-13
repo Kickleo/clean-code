@@ -1,4 +1,4 @@
-package ex2;
+package net.ecoles.epsi.tepedelen.leo.ex2;
 
 /**
  * Représente un compte bancaire de type compte courante (type=CC) ou livret A (type=LA)

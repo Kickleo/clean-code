@@ -1,4 +1,4 @@
-package ex5;
+package net.ecoles.epsi.tepedelen.leo.ex5;
 
 public class Item {
 

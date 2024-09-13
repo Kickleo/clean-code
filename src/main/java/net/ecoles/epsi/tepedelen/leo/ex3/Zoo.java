@@ -1,4 +1,4 @@
-package ex3;
+package net.ecoles.epsi.tepedelen.leo.ex3;
 
 import java.util.List;
 

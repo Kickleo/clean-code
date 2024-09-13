@@ -1,4 +1,4 @@
-package ex2;
+package net.ecoles.epsi.tepedelen.leo.ex2;
 
 public class LivretA extends CompteBancaire {
 

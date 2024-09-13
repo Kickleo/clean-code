@@ -1,4 +1,4 @@
-package ex4;
+package net.ecoles.epsi.tepedelen.leo.ex4;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
