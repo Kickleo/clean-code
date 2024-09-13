@@ -1,32 +1,30 @@
 package net.ecoles.epsi.tepedelen.leo.ex3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Zoo {
 
     private String nom;
-    private List<String> types;
-    private List<String> noms;
-    private List<String> comportements;
+    private List<Animal> animaux;
 
     public Zoo(String nom) {
         this.nom = nom;
+        animaux = new ArrayList<Animal>();
     }
 
-    public void addAnimal(String nomAnimal, String typeAnimal, String comportement) {
-        types.add(typeAnimal);
-        noms.add(nomAnimal);
-        comportements.add(comportement);
+    public void addAnimal(Animal animal) {
+        animaux.add(animal);
     }
 
     public void afficherListeAnimaux() {
-        for (int i = 0; i < types.size(); i++) {
-            System.out.println(noms.get(i) + " " + types.get(i) + " " + comportements.get(i));
+        for (int i = 0; i < animaux.size(); i++) {
+            System.out.println(animaux.get(i).getNom() + " " + animaux.get(i).getType() + " " + animaux.get(i).getComportement());
         }
     }
 
     public int taille() {
-        return types.size();
+        return animaux.size();
     }
 
     /**
