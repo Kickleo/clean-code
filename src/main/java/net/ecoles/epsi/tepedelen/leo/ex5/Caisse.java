@@ -7,16 +7,28 @@ public class Caisse {
 
     private String nom;
     private List<Item> items;
+    private int poidsMin;
+    private int poidsMax;
 
     /**
      * Constructeur
      *
      * @param nom
      */
-    public Caisse(String nom) {
+    public Caisse(String nom, int poidsMin, int poidsMax) {
         super();
         this.nom = nom;
         this.items = new ArrayList<>();
+    }
+
+    public boolean peutAccepter(Item item) {
+        return item.getPoids() >= poidsMin && item.getPoids() < poidsMax;
+    }
+
+    public void ajouterItem(Item item) {
+        if (peutAccepter(item)) {
+            items.add(item);
+        }
     }
 
     /**
